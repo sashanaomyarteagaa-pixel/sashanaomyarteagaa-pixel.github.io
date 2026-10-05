@@ -29,11 +29,32 @@
             0%, 100% { transform: translateY(0); animation-timing-function: ease-in; }
             50% { transform: translateY(-50px); animation-timing-function: ease-out; }
         }
- .a href { 
-   display: flex;
-            justify-content: center;
-            gap: 
-            margin-top: 30px; } 
+ /* This container holds your resource links */
+.centered-container {
+  display: flex;
+  flex-direction: column;   /* 1. Tells the container to stack items vertically */
+  align-items: center;      /* 2. Centers the stacked column horizontally */
+  text-align: center;       
+  gap: 12px;                /* 3. Adds clean spacing between each stacked link */
+  width: 100%;
+}
+
+/* This applies directly to your resource links */
+.btn-link {
+  display: inline-block;    /* 4. Allows the link to accept clean padding and widths */
+  width: 280px;             /* 5. Gives all links an identical width so they look uniform */
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  background-color: #0056b3;
+}
+ 
 </style>
 <h1>Fuck My Birthday is Coming up</h1>
 <img src="cake.jpg" width="400" class="center-img bouncing-image" alt="bouncing image">
@@ -60,3 +81,4 @@ explore the significance of changing inner dialogue.</p>
     <a href="https://www.creativescare.org/" class="btn-link">Artist Care</a>
   </div>
     <body>
+
